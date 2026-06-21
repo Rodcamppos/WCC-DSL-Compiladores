@@ -1,0 +1,13 @@
+Grupo C {
+    Selecao Brasil (pote: 1, continente: AmericaDoSul)
+    Selecao Marrocos (pote: 2, continente: Africa)
+    Selecao Escocia (pote: 3, continente: Europa)
+    Selecao Haiti (pote: 4, continente: Na_e_Central_America)
+
+    Confronto Brasil 1 x 1 Marrocos
+    Confronto Escocia 1 x 0 Haiti
+    Confronto Brasil 3 x 0 Escocia
+    Confronto Marrocos 2 x 0 Haiti
+    Confronto Haiti 0 x 3 Brasil
+    Confronto Marrocos 1 x 0 Escocia
+}
