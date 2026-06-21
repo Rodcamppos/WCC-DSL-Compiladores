@@ -1,3 +1,27 @@
+Grupo A {
+    Selecao Mexico (pote: 1, continente: Na_e_Central_America)
+    Selecao CoreiaDoSul (pote: 2, continente: Asia)
+    Selecao Tchequia (pote: 3, continente: Europa)
+    Selecao AfricaDoSul (pote: 4, continente: Africa)
+
+    Confronto Mexico 2 x 0 AfricaDoSul
+    Confronto CoreiaDoSul 2 x 1 Tchequia
+    Confronto Tchequia 1 x 1 AfricaDoSul
+    Confronto Mexico 1 x 0 CoreiaDoSul
+}
+
+Grupo B {
+    Selecao Canada (pote: 1, continente: Na_e_Central_America)
+    Selecao Suica (pote: 2, continente: Europa)
+    Selecao Bosnia (pote: 3, continente: Europa)
+    Selecao Catar (pote: 4, continente: Asia)
+
+    Confronto Canada 1 x 1 Bosnia
+    Confronto Catar 1 x 1 Suica
+    Confronto Suica 4 x 1 Bosnia
+    Confronto Canada 6 x 0 Catar
+}
+
 Grupo C {
     Selecao Brasil (pote: 1, continente: AmericaDoSul)
     Selecao Marrocos (pote: 2, continente: Africa)
@@ -5,11 +29,109 @@ Grupo C {
     Selecao Haiti (pote: 4, continente: Na_e_Central_America)
 
     Confronto Brasil 1 x 1 Marrocos
-    Confronto Escocia 1 x 0 Haiti
-    Confronto Brasil 3 x 0 Escocia
-    Confronto Marrocos 2 x 0 Haiti
-    Confronto Haiti 0 x 3 Brasil
-    Confronto Marrocos 1 x 0 Escocia
+    Confronto Haiti 0 x 1 Escocia
+    Selecao Escocia (pote: 3, continente: Europa) # reinicialização necessária pelo limite de passadas na semântica atual
+    Confronto Escocia 0 x 1 Marrocos
+    Confronto Brasil 3 x 0 Haiti
+}
+
+Grupo D {
+    Selecao EstadosUnidos (pote: 1, continente: Na_e_Central_America)
+    Selecao Australia (pote: 2, continente: Oceania)
+    Selecao Paraguai (pote: 3, continente: AmericaDoSul)
+    Selecao Turquia (pote: 4, continente: Europa)
+
+    Confronto EstadosUnidos 4 x 1 Paraguai
+    Confronto Australia 2 x 0 Turquia
+    Confronto EstadosUnidos 2 x 0 Australia
+    Confronto Turquia 0 x 1 Paraguai
+}
+
+Grupo E {
+    Selecao Alemanha (pote: 1, continente: Europa)
+    Selecao CostaDoMarfim (pote: 2, continente: Africa)
+    Selecao Equador (pote: 3, continente: AmericaDoSul)
+    Selecao Curacao (pote: 4, continente: Na_e_Central_America)
+
+    Confronto Alemanha 7 x 1 Curacao
+    Confronto CostaDoMarfim 1 x 0 Equador
+    Confronto Alemanha 2 x 1 CostaDoMarfim
+    Confronto Equador 0 x 0 Curacao
+}
+
+Grupo F {
+    Selecao PaisesBaixos (pote: 1, continente: Europa)
+    Selecao Japao (pote: 2, continente: Asia)
+    Selecao Suecia (pote: 3, continente: Europa)
+    Selecao Tunisia (pote: 4, continente: Africa)
+
+    Confronto PaisesBaixos 2 x 2 Japao
+    Confronto Suecia 5 x 1 Tunisia
+    Confronto PaisesBaixos 5 x 1 Suecia
+    Confronto Tunisia 0 x 4 Japao
+}
+
+Grupo G {
+    Selecao Belgica (pote: 1, continente: Europa)
+    Selecao Ira (pote: 2, continente: Asia)
+    Selecao NovaZelandia (pote: 3, continente: Oceania)
+    Selecao Egito (pote: 4, continente: Africa)
+
+    Confronto Belgica 1 x 1 Egito
+    Confronto Ira 2 x 2 NovaZelandia
+    Confronto Belgica 0 x 0 Ira
+}
+
+Grupo H {
+    Selecao Espanha (pote: 1, continente: Europa)
+    Selecao Uruguai (pote: 2, continente: AmericaDoSul)
+    Selecao CaboVerde (pote: 3, continente: Africa)
+    Selecao ArabiaSaudita (pote: 4, continente: Asia)
+
+    Confronto Espanha 0 x 0 CaboVerde
+    Confronto ArabiaSaudita 1 x 1 Uruguai
+    Confronto Espanha 4 x 0 ArabiaSaudita
+    Confronto Uruguai 2 x 2 CaboVerde
+}
+
+Grupo I {
+    Selecao Franca (pote: 1, continente: Europa)
+    Selecao Noruega (pote: 2, continente: Europa)
+    Selecao Senegal (pote: 3, continente: Africa)
+    Selecao Iraque (pote: 4, continente: Asia)
+
+    Confronto Franca 3 x 1 Senegal
+    Confronto Iraque 1 x 4 Noruega
+}
+
+Grupo J {
+    Selecao Argentina (pote: 1, continente: AmericaDoSul)
+    Selecao Austria (pote: 2, continente: Europa)
+    Selecao Jordania (pote: 3, continente: Asia)
+    Selecao Argelia (pote: 4, continente: Africa)
+
+    Confronto Argentina 3 x 0 Argelia
+    Confronto Austria 3 x 1 Jordania
+}
+
+Grupo K {
+    Selecao Portugal (pote: 1, continente: Europa)
+    Selecao Colombia (pote: 2, continente: AmericaDoSul)
+    Selecao RDCongo (pote: 3, continente: Africa)
+    Selecao Uzbequistao (pote: 4, continente: Asia)
+
+    Confronto Portugal 1 x 1 RDCongo
+    Confronto Uzbequistao 1 x 3 Colombia
+}
+
+Grupo L {
+    Selecao Inglaterra (pote: 1, continente: Europa)
+    Selecao Gana (pote: 2, continente: Africa)
+    Selecao Croacia (pote: 3, continente: Europa)
+    Selecao Panama (pote: 4, continente: Na_e_Central_America)
+
+    Confronto Inglaterra 4 x 2 Croacia
+    Confronto Gana 1 x 0 Panama
 }
 
 # Feito no dia 21/06/2026
