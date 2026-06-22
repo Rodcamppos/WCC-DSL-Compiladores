@@ -1,8 +1,28 @@
-def interpretar_copa(tree):
+def interpretar_copa(tree, memoria_global=None):
+    if memoria_global is None:
+        memoria_global = {}
+
     match tree.data:
         case "start":
             for filho in tree.children:
-                interpretar_copa(filho)
+                interpretar_copa(filho, memoria_global)
+            
+            terceiros_colocados = []
+            for nome_grupo, ranking in memoria_global.items():
+                if len(ranking) >= 3:
+                    time, dados = ranking[2]
+                    terceiros_colocados.append((time, dados, nome_grupo))
+            
+            melhores_terceiros = sorted(
+                terceiros_colocados,
+                key=lambda x: (x[1]["pontos"], x[1]["saldo"], x[1]["gols_pro"]),
+                reverse=True
+            )
+            
+            print("\n=== RANKING GLOBAL DOS TERCEIROS COLOCADOS ===")
+            for i, (time, dados, grupo) in enumerate(melhores_terceiros, 1):
+                status = "AVANÇA (Top 8)" if i <= 8 else "ELIMINADO"
+                print(f"{i}. {time} (Grupo {grupo}) - {dados['pontos']} pts | Saldo: {dados['saldo']} | GP: {dados['gols_pro']} -> {status}")
             return
 
         case "grupo":
@@ -43,8 +63,10 @@ def interpretar_copa(tree):
                 reverse=True
             )
 
+            memoria_global[nome_grupo] = ranking
+
             print(f"\n=== CLASSIFICAÇÃO FINAL: GRUPO {nome_grupo} ===")
             for i, (time, dados) in enumerate(ranking, 1):
-                status = "Classificado" if i <= 2 else "Eliminado"
+                status = "Classificado" if i <= 2 else "Aguardando Repescagem"
                 print(f"{i}. {time} - {dados['pontos']} pts | Saldo: {dados['saldo']} | GP: {dados['gols_pro']} ({status})")
             return
