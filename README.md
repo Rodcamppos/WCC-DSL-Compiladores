@@ -50,3 +50,9 @@ Para que um programa escrito na DSL compile e gere resultados com sucesso, ele d
 1. Instale a biblioteca necessária via terminal:
 ```bash
 pip install -r requirements.txt
+
+Execute o pipeline completo do compilador passando o arquivo de teste com os dados da Copa do Mundo:
+
+python main.py exemplos/exemplo_inicial.wcc
+
+O compilador realizará a análise sintática, as validações semânticas das regras da FIFA (potes e continentes) e exibirá no terminal a classificação calculada de cada grupo, seguida pelo ranking unificado dos melhores terceiros colocados.
