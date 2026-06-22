@@ -4,8 +4,8 @@ def interpretar_copa(tree, memoria_global=None):
 
     match tree.data:
         case "start":
-            for filho in tree.children:
-                interpretar_copa(filho, memoria_global)
+            for child in tree.children:
+                interpretar_copa(child, memoria_global)
             
             terceiros_colocados = []
             for nome_grupo, ranking in memoria_global.items():
@@ -67,6 +67,11 @@ def interpretar_copa(tree, memoria_global=None):
 
             print(f"\n=== CLASSIFICAÇÃO FINAL: GRUPO {nome_grupo} ===")
             for i, (time, dados) in enumerate(ranking, 1):
-                status = "Classificado" if i <= 2 else "Aguardando Repescagem"
+                if i <= 2:
+                    status = "Classificado"
+                elif i == 3:
+                    status = "Aguardando Repescagem"
+                else:
+                    status = "Eliminado"
                 print(f"{i}. {time} - {dados['pontos']} pts | Saldo: {dados['saldo']} | GP: {dados['gols_pro']} ({status})")
             return
