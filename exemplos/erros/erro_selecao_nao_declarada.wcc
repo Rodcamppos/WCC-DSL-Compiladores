@@ -1,0 +1,13 @@
+# TESTE DE ERRO: Confronto referencia seleção que não foi declarada no grupo
+# Erro esperado: Erro Semântico [A]: A seleção 'Portugal' no confronto não foi declarada no grupo.
+
+Grupo A {
+    Selecao Brasil (pote: 1, continente: AmericaDoSul)
+    Selecao Japao (pote: 2, continente: Asia)
+    Selecao Senegal (pote: 3, continente: Africa)
+    Selecao Canada (pote: 4, continente: Na_e_Central_America)
+
+    Confronto Brasil 3 x 0 Portugal
+    Confronto Japao 1 x 1 Senegal
+    Confronto Canada 2 x 0 Brasil
+}

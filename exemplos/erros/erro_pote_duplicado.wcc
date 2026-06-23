@@ -1,0 +1,13 @@
+# TESTE DE ERRO: Dois times declarados no mesmo pote técnico
+# Erro esperado: Erro Semântico [A]: O Pote 1 já possui uma seleção cadastrada.
+
+Grupo A {
+    Selecao Brasil (pote: 1, continente: AmericaDoSul)
+    Selecao Argentina (pote: 1, continente: AmericaDoSul)
+    Selecao Japao (pote: 3, continente: Asia)
+    Selecao Angola (pote: 4, continente: Africa)
+
+    Confronto Brasil 2 x 0 Japao
+    Confronto Argentina 1 x 1 Angola
+    Confronto Brasil 0 x 0 Angola
+}

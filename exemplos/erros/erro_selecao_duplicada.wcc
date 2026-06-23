@@ -1,0 +1,13 @@
+# TESTE DE ERRO: Seleção declarada duas vezes no mesmo grupo
+# Erro esperado: Erro Semântico [A]: A seleção 'Brasil' já foi declarada.
+
+Grupo A {
+    Selecao Brasil (pote: 1, continente: AmericaDoSul)
+    Selecao Alemanha (pote: 2, continente: Europa)
+    Selecao Japao (pote: 3, continente: Asia)
+    Selecao Brasil (pote: 4, continente: AmericaDoSul)
+
+    Confronto Brasil 2 x 1 Alemanha
+    Confronto Japao 0 x 0 Brasil
+    Confronto Alemanha 3 x 1 Japao
+}

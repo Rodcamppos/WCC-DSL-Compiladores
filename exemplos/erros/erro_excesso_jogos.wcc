@@ -1,0 +1,14 @@
+# TESTE DE ERRO: Seleção disputa mais de 3 jogos na fase de grupos
+# Erro esperado: Erro Semântico [A]: A seleção 'Brasil' ultrapassou o limite máximo de 3 jogos.
+
+Grupo A {
+    Selecao Brasil (pote: 1, continente: AmericaDoSul)
+    Selecao Japao (pote: 2, continente: Asia)
+    Selecao Senegal (pote: 3, continente: Africa)
+    Selecao Canada (pote: 4, continente: Na_e_Central_America)
+
+    Confronto Brasil 2 x 0 Japao
+    Confronto Brasil 1 x 1 Senegal
+    Confronto Brasil 3 x 0 Canada
+    Confronto Brasil 0 x 2 Japao
+}

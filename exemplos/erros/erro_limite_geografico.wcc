@@ -1,0 +1,13 @@
+# TESTE DE ERRO: Três seleções da Europa no mesmo grupo (limite é 2)
+# Erro esperado: Erro Semântico [A]: O grupo não pode ter mais de 2 seleções da Europa.
+
+Grupo A {
+    Selecao Franca (pote: 1, continente: Europa)
+    Selecao Alemanha (pote: 2, continente: Europa)
+    Selecao Espanha (pote: 3, continente: Europa)
+    Selecao Brasil (pote: 4, continente: AmericaDoSul)
+
+    Confronto Franca 2 x 1 Alemanha
+    Confronto Espanha 0 x 0 Brasil
+    Confronto Franca 1 x 1 Espanha
+}
