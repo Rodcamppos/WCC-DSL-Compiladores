@@ -1,8 +1,9 @@
 # WorldCupCompiler (WCC) 🏆
 
+
 O **WorldCupCompiler (WCC)** é um front-end de compilador estruturado para uma **Linguagem de Domínio Específico (DSL)** desenvolvida em **Python** utilizando a biblioteca **Lark**. O objetivo principal do projeto é fornecer uma ferramenta declarativa para simular, auditar e gerenciar a fase de grupos da Copa do Mundo da FIFA 2026 de forma fidedigna aos critérios utilizados na vida real.
 
-Este projeto foi desenvolvido pelos estudantes **Gabriel Cortez** e **Rodrigo Campos** como projeto avaliativo para a disciplina de **Compiladores**, ministrada pelo professor **Luis Carlos** da **Escola Politécnica da Universidade de Pernambuco (POLI/UPE)**.
+Este projeto foi desenvolvido pelos estudantes **Gabriel Cortez** e **Rodrigo Campos** como projeto avaliativo para a disciplina de **Compiladores**, ministrada pelo professor **Luis Carlos** da **Escola Politécnica da Universidade de Pernambuco (POLI/UPE)**, aproveitando o clima de Copa do Mundo, que é um evento de futebol bastante celebrado e aguardado durante os anos. Quando este ocorre, muitas pessoas fazem "bolões", tentando prever os resultados e os acontecimentos do torneio, mas como viabilizar e facilitar tudo isso?
 
 ---
 
